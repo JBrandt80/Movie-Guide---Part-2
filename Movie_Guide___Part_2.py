@@ -39,7 +39,6 @@ def add_movie(movies):
     movies.append(title)
     write_movies(movies)
     print(f"{title} was added. \n")
-    list_movies(movies)
 
 def delete_movie(movies):
     try:
@@ -48,7 +47,6 @@ def delete_movie(movies):
             removed = movies.pop(number - 1)
             write_movies(movies)
             print(f"{removed} was deleted. \n")
-            list_movies(movies)
         else:
             print("Invalid movie number. \n")
     except ValueError:
