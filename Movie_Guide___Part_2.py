@@ -44,7 +44,7 @@ def add_movie(movies):
 def delete_movie(movies):
     try:
         number = int(input("Enter movie number to delete: "))
-        if 1 <= len(movies):
+        if 1 <= number <= len(movies):
             removed = movies.pop(number - 1)
             write_movies(movies)
             print(f"{removed} was deleted. \n")
